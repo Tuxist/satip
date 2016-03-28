@@ -60,6 +60,36 @@
      </rect>
     </property>
    </widget>
+   <widget class="Phonon::VideoPlayer" name="videoPlayer">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>781</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Phonon::SeekSlider" name="seekSlider">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>570</y>
+      <width>411</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Phonon::VolumeSlider" name="volumeSlider">
+    <property name="geometry">
+     <rect>
+      <x>913</x>
+      <y>570</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -68,12 +98,12 @@
      <x>0</x>
      <y>0</y>
      <width>1076</width>
-     <height>19</height>
+     <height>30</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuDevices">
     <property name="title">
-     <string>Devices</string>
+     <string>De&amp;vices</string>
     </property>
     <addaction name="actionSelect_Device"/>
     <addaction name="actionAdd_Device"/>
@@ -83,7 +113,7 @@
    </widget>
    <widget class="QMenu" name="menuChannels">
     <property name="title">
-     <string>Channels</string>
+     <string>&amp;Channels</string>
     </property>
     <addaction name="actionAdd_Channel_List"/>
     <addaction name="actionEdit_Channel_List"/>
@@ -104,12 +134,12 @@
   </widget>
   <action name="actionImport_CSC_List">
    <property name="text">
-    <string>Import CSV List</string>
+    <string>&amp;Import CSV List</string>
    </property>
   </action>
   <action name="actionExport_CSV_List">
    <property name="text">
-    <string>Export CSV List</string>
+    <string>Export &amp;CSV List</string>
    </property>
   </action>
   <action name="actionSave_ChannelList">
@@ -119,42 +149,42 @@
   </action>
   <action name="actionAdd_Device">
    <property name="text">
-    <string>Add Device</string>
+    <string>&amp;Add Device</string>
    </property>
   </action>
   <action name="actionRemove_Device">
    <property name="text">
-    <string>Remove Device</string>
+    <string>&amp;Remove Device</string>
    </property>
   </action>
   <action name="actionSearch_Device">
    <property name="text">
-    <string>Edit Device</string>
+    <string>&amp;Edit Device</string>
    </property>
   </action>
   <action name="actionSearch_Device_2">
    <property name="text">
-    <string>Search Device</string>
+    <string>Search &amp;Device</string>
    </property>
   </action>
   <action name="actionSelect_Device">
    <property name="text">
-    <string>Select Device</string>
+    <string>&amp;Select Device</string>
    </property>
   </action>
   <action name="actionAdd_Channel_List">
    <property name="text">
-    <string>Add Channel List</string>
+    <string>&amp;Add Channel List</string>
    </property>
   </action>
   <action name="actionEdit_Channel_List">
    <property name="text">
-    <string>Edit Channel List</string>
+    <string>&amp;Edit Channel List</string>
    </property>
   </action>
   <action name="actionRemove_Channel_List">
    <property name="text">
-    <string>Remove Channel List</string>
+    <string>&amp;Remove Channel List</string>
    </property>
   </action>
   <action name="actionQuit">
@@ -164,15 +194,32 @@
   </action>
   <action name="actionBrowse">
    <property name="text">
-    <string>Browse</string>
+    <string>&amp;Browse</string>
    </property>
   </action>
   <action name="actionConvert">
    <property name="text">
-    <string>Export</string>
+    <string>&amp;Export</string>
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Phonon::SeekSlider</class>
+   <extends>QWidget</extends>
+   <header location="global">phonon/seekslider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Phonon::VideoPlayer</class>
+   <extends>QWidget</extends>
+   <header location="global">phonon/videoplayer.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Phonon::VolumeSlider</class>
+   <extends>QWidget</extends>
+   <header location="global">phonon/volumeslider.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
