@@ -1,0 +1,5 @@
+#define DEBUGOUT stderr
+#define NPOS sizeof(size_t)
+#define DEBUG_HARDWAY asm volatile ("int3;");
+
+#define DEBUG

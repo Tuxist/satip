@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1076</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SatIP</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="listChannel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>231</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>570</y>
+      <width>94</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pause</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>570</y>
+      <width>94</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Record</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>231</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1076</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDevices">
+    <property name="title">
+     <string>Devices</string>
+    </property>
+    <addaction name="actionSelect_Device"/>
+    <addaction name="actionAdd_Device"/>
+    <addaction name="actionRemove_Device"/>
+    <addaction name="actionSearch_Device"/>
+    <addaction name="actionSearch_Device_2"/>
+   </widget>
+   <widget class="QMenu" name="menuChannels">
+    <property name="title">
+     <string>Channels</string>
+    </property>
+    <addaction name="actionAdd_Channel_List"/>
+    <addaction name="actionEdit_Channel_List"/>
+    <addaction name="actionRemove_Channel_List"/>
+    <addaction name="actionImport_CSC_List"/>
+    <addaction name="actionExport_CSV_List"/>
+   </widget>
+   <widget class="QMenu" name="menuRecords">
+    <property name="title">
+     <string>Records</string>
+    </property>
+    <addaction name="actionBrowse"/>
+    <addaction name="actionConvert"/>
+   </widget>
+   <addaction name="menuDevices"/>
+   <addaction name="menuChannels"/>
+   <addaction name="menuRecords"/>
+  </widget>
+  <action name="actionImport_CSC_List">
+   <property name="text">
+    <string>Import CSV List</string>
+   </property>
+  </action>
+  <action name="actionExport_CSV_List">
+   <property name="text">
+    <string>Export CSV List</string>
+   </property>
+  </action>
+  <action name="actionSave_ChannelList">
+   <property name="text">
+    <string>Save ChannelList</string>
+   </property>
+  </action>
+  <action name="actionAdd_Device">
+   <property name="text">
+    <string>Add Device</string>
+   </property>
+  </action>
+  <action name="actionRemove_Device">
+   <property name="text">
+    <string>Remove Device</string>
+   </property>
+  </action>
+  <action name="actionSearch_Device">
+   <property name="text">
+    <string>Edit Device</string>
+   </property>
+  </action>
+  <action name="actionSearch_Device_2">
+   <property name="text">
+    <string>Search Device</string>
+   </property>
+  </action>
+  <action name="actionSelect_Device">
+   <property name="text">
+    <string>Select Device</string>
+   </property>
+  </action>
+  <action name="actionAdd_Channel_List">
+   <property name="text">
+    <string>Add Channel List</string>
+   </property>
+  </action>
+  <action name="actionEdit_Channel_List">
+   <property name="text">
+    <string>Edit Channel List</string>
+   </property>
+  </action>
+  <action name="actionRemove_Channel_List">
+   <property name="text">
+    <string>Remove Channel List</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionBrowse">
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </action>
+  <action name="actionConvert">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
